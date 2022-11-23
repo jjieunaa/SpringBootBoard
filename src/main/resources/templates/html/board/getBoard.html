@@ -61,7 +61,7 @@
 		
 			<div>
 				<a th:href="@{/board/insertBoard}">글등록</a>&nbsp;&nbsp;
-				<a th:href="@{/board/deleteBoard(seq=${board.seq})}">글삭제</a>&nbsp;&nbsp;
+				<a th:if="${session['member'].role=='ROLE_ADMIN'}" th:href="@{/board/deleteBoard(seq=${board.seq})}">글삭제</a>&nbsp;&nbsp;
 				<a th:href="@{/board/listBoard}">글목록</a>
 			</div>
 		</div>

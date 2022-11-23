@@ -10,6 +10,8 @@
 	<div class="wrapper">
 		<div class="title">
 			<h1>게시글 목록</h1>
+			<h3><span th:text="${session['member'].name.concat('님 환영!')}"></span></h3>
+			<a th:href="@{/member/logout}">로그아웃</a>
 		</div>
 		
 		<div class="content">

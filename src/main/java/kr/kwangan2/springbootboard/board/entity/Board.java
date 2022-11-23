@@ -19,6 +19,12 @@ public class Board {
 		
 	}
 	
+	public Board(String title, String writer, String content) {
+		this.writer = writer;
+		this.title = title;
+		this.content = content;
+	}
+	
 	@Id
 	@GeneratedValue
 	private Long seq;

@@ -66,6 +66,12 @@
 		    <artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 		
+		<!-- junit -->
+		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
